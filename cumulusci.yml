@@ -1,0 +1,26 @@
+minimum_cumulusci_version: '3.71.0'
+project:
+    name: testingwill
+    package:
+        name: testingwill
+        namespace: testingwill
+        api_version: '55.0'
+    git:
+        default_branch: 'main'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/testingwill/tests
+            options:
+                outputdir: robot/testingwill/results
+
+    robot_testdoc:
+        options:
+            path: robot/testingwill/tests
+            output: robot/testingwill/doc/testingwill_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
