@@ -1,0 +1,3 @@
+- object: Car__c
+  fields:
+      name: cooper

@@ -1,0 +1,4 @@
+<template>
+    <lightning-button variant="Neutal" label="NewContact" title="Primary action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+        <lightning-record-form object-api-name={contactObject} fields={myFields} onsuccess={handleContactCreated}></lightning-record-form>
+</template>
